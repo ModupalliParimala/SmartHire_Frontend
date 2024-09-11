@@ -32,3 +32,6 @@ display_page(app)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+else:
+    # This is what Vercel will use
+    from app import server
