@@ -22,7 +22,7 @@ def generate_jd(app):
                 response.raise_for_status()  # Raise an error if the request fails
                 
                 response_data = response.json()
-                if response_data['message'] == 'Success':
+                if response_data['status'] == '200':
                     filename = response_data['file_name']
                     download_link = html.A(
                         html.I(className='fas fa-download me-2'),
