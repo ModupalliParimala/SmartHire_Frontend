@@ -26,7 +26,7 @@ def generate_jd(app):
                     filename = response_data['file_name']
                     download_link = html.A(
                         html.I(className='fas fa-download me-2'),
-                        href=os.getenv('SMARTHIRE_BACKEND_ENDPOINT')+f'download?f_name={filename}&f_type=pdf',
+                        href=os.getenv('SMARTHIRE_BACKEND_ENDPOINT')+f'download?f_name={filename}&f_type=docx',
                         target='_blank',
                         className='btn btn-primary btn-sm'
                     )
